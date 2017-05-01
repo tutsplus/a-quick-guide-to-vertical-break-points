@@ -1,0 +1,116 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Example 3</title>
+    <meta name="description" content="Make a header or footer fixed only when there is enough room.">
+    <meta name="author" content="Adi Purdila">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 100px 0 0 0;
+            background-color: #eaeaea;
+        }
+
+        .wrapper {
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        .content p {
+            margin-bottom: 5em;
+        }        
+
+        .content,
+        .hero {
+            text-align: center;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 1em 3em;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            float: right;
+        }
+
+            nav ul li {
+                float: left;
+            }
+
+                nav ul li a {
+                    height: 50px;
+                    line-height: 50px;
+                }
+
+        .logo {
+            width: auto;
+            height: 50px;
+            float: left;
+        }
+
+        @media (max-height: 300px) {
+            body {
+                padding-top: 0;
+            }
+
+            header {
+                position: relative;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#">Menu item 1</a></li>
+                <li><a href="#">Menu item 2</a></li>
+                <li><a href="#">Menu item 3</a></li>
+                <li><a href="#">Menu item 4</a></li>
+                <li><a href="#">Menu item 5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <div class="hero">
+            <h1>Example 3</h1>
+            <h2>Make a header or footer fixed only when there is enough room.</h2>
+        </div>
+
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad mollitia, obcaecati nemo maxime iure, tenetur facere non hic possimus. Facere odit soluta eligendi modi minima nobis, labore quas animi iste!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nam officiis, ullam iusto quaerat beatae neque sapiente sed, provident, hic, libero consectetur adipisci a ipsam veniam. Culpa, voluptas sunt adipisci.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nam officiis, ullam iusto quaerat beatae neque sapiente sed, provident, hic, libero consectetur adipisci a ipsam veniam. Culpa, voluptas sunt adipisci.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad mollitia, obcaecati nemo maxime iure, tenetur facere non hic possimus. Facere odit soluta eligendi modi minima nobis, labore quas animi iste!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nam officiis, ullam iusto quaerat beatae neque sapiente sed, provident, hic, libero consectetur adipisci a ipsam veniam. Culpa, voluptas sunt adipisci.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nam officiis, ullam iusto quaerat beatae neque sapiente sed, provident, hic, libero consectetur adipisci a ipsam veniam. Culpa, voluptas sunt adipisci.</p>
+        </div>
+    </div>
+</body>
+</html>

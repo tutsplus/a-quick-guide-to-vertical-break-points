@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Example 1</title>
+    <meta name="description" content="Changing spacing and font sizes on short viewports.">
+    <meta name="author" content="Adi Purdila">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+
+    <style>
+        .wrapper {
+            width: 75%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .hero {
+            background-color: #eaeaea;
+            padding: 2em 3em;
+        }
+
+            .hero h1 {
+                font-size: 26px;
+            }
+
+            .hero h2 {
+                font-size: 18px;
+            }
+
+        .content {
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        @media (min-height: 500px) {
+            .hero {
+                padding: 5em 3em;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="hero">
+            <h1>Example 1</h1>
+            <h2>Changing spacing and font sizes on short viewports.</h2>
+            <p>Sometimes it might be useful to reduce the vertical spacing of elements or change their font size in order to show as much content as possible in a short viewport.</p>
+        </div>
+
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad mollitia, obcaecati nemo maxime iure, tenetur facere non hic possimus. Facere odit soluta eligendi modi minima nobis, labore quas animi iste!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nam officiis, ullam iusto quaerat beatae neque sapiente sed, provident, hic, libero consectetur adipisci a ipsam veniam. Culpa, voluptas sunt adipisci.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nam officiis, ullam iusto quaerat beatae neque sapiente sed, provident, hic, libero consectetur adipisci a ipsam veniam. Culpa, voluptas sunt adipisci.</p>
+        </div>
+    </div>
+</body>
+</html>

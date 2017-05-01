@@ -1,0 +1,114 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Example 2</title>
+    <meta name="description" content="Adjust mobile menu layout on short viewports.">
+    <meta name="author" content="Adi Purdila">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            width: 100%;
+            padding: 2em;
+        }
+
+        .mobile-menu {
+            display: none;
+            background-color: rgba(0, 0, 0, 0.85);
+            width: 100vw;
+            position: fixed;
+            height: 100vh;
+            text-align: center;
+            padding: 3em;
+        }
+
+            .mobile-menu .menu {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+
+                .mobile-menu .menu li {
+                    height: 5em;
+                    line-height: 5em;
+                    width: 100%;
+                }
+
+                .mobile-menu .menu a {
+                    text-decoration: none;
+                    color: #FFF;
+                }
+
+        @media (max-width: 568px) {
+            .mobile-menu {
+                display: block;
+            }
+        }
+
+        @media (min-width: 300px) and (max-height: 550px) {
+            .mobile-menu {
+                padding: 2em;
+            }
+
+            .mobile-menu .menu li {
+                width: 50%;
+                float: left;
+                display: block;
+            }
+        }
+
+        @media (max-height: 380px) {
+            .mobile-menu {
+                padding: 1em;
+            }
+
+            .mobile-menu .menu li {
+                display: block;
+                height: 3em;
+                line-height: 3em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mobile-menu">
+        <ul class="menu">
+            <li><a href="#">Menu item 1</a></li>
+            <li><a href="#">Menu item 2</a></li>
+            <li><a href="#">Menu item 3</a></li>
+            <li><a href="#">Menu item 4</a></li>
+            <li><a href="#">Menu item 5</a></li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <div class="hero">
+            <h1>Example 2</h1>
+            <h2>Adjust mobile menu layout on short viewports.</h2>
+        </div>
+
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad mollitia, obcaecati nemo maxime iure, tenetur facere non hic possimus. Facere odit soluta eligendi modi minima nobis, labore quas animi iste!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nam officiis, ullam iusto quaerat beatae neque sapiente sed, provident, hic, libero consectetur adipisci a ipsam veniam. Culpa, voluptas sunt adipisci.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nam officiis, ullam iusto quaerat beatae neque sapiente sed, provident, hic, libero consectetur adipisci a ipsam veniam. Culpa, voluptas sunt adipisci.</p>
+        </div>
+    </div>
+</body>
+</html>
